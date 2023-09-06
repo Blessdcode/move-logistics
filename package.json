@@ -1,0 +1,11 @@
+{
+  "name": "move-logisitic",
+  "version": "1.0.0",
+  "description": "this app enables user to get their product move from one locaton to another",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "terraform",
+  "license": "ISC"
+}
