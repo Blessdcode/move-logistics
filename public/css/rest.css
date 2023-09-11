@@ -134,3 +134,17 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--body-1);
+    font-family: 'Poppins';
+}
+
+button {
+    outline: none;
+    border: none;
+}

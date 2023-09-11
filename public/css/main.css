@@ -1,5 +1,104 @@
-body {
+:root {
+    --Facebook-Blue: #4267B2;
+    --Dark-Shade: #1A2631;
+    --Button-Color: #F94D53;
+    --White: #FFF;
+    --Gray-3: #828282;
+    --body-1: #F8F8F8;
+    --menu: #1A2631
+}
 
-    font-family: 'Poppins';
+.dark-theme {
+    --body-1: #242323;
+    --menu: #FFF;
+}
 
+header {
+    display: flex;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.logo {
+    width: 110px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu-Items .list-items {
+    display: inline-block;
+    margin-left: .77rem;
+}
+
+.menu-Items .list-items a {
+    font-size: .88rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--Gray-3);
+}
+
+.menu-Items .list-items a.active {
+    color: var(--Facebook-Blue);
+    font-weight: 600;
+
+}
+
+.menuBar {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.menuBar:hover {
+    transform: rotate(360deg);
+}
+
+.dark-theme-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.dark-theme-icon img {
+    width: 100%;
+}
+
+
+.rt-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.btn-1 {
+    color: var(--Dark-Shade);
+    font-size: 1rem;
+    font-weight: 500;
+    /* line-height: 1.625rem; */
+    padding: .45rem .87rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+
+}
+
+.btn-2 {
+    border-radius: 0.3125rem;
+    border: 1px solid var(--Button-Color);
+    background: var(--Button-Color);
+    color: var(--White);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .45rem .87rem;
+    /* line-height: 1.625rem; */
+    cursor: pointer;
 }

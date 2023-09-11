@@ -1,0 +1,59 @@
+@media screen and (max-width:800px) {
+    header{
+        /* background-color: brown; */
+    }
+    .buttons{
+        display: none;
+    }
+
+    .menuBar{
+        display: block;
+        position: absolute;
+        right: 15px;
+        margin-bottom: 14px;
+        color: var(--menu);
+    }
+
+    .Navbar{
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .menu-Items{
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        z-index: 10;
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        background: var(--body-1);
+        /* backdrop-filter: blur(15px); */
+        width: 50%;
+        padding-right: 1rem;
+        border-radius: 10px 0 0 10px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .menu-Items.visible{
+        /* top: 2rem; */
+        height: 210px;
+        transition: height .5s ease-in;
+    }
+
+    .menu-Items .list-items{
+        /* display: block; */
+        /* margin-left: .77rem; */
+        margin: .55rem 0;
+    }
+    .dark-theme-icon{
+        position: absolute;
+        top: 23px;
+        right: 3rem;
+    }
+
+}
