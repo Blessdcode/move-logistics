@@ -62,3 +62,74 @@ function storage() {
 }
 
 storage()
+
+
+// Activate reveal on scroll
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++){
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add("revealOnScroll")
+        } else {
+            reveals[i].classList.remove("revealOnScroll");
+        }
+    }
+}
+
+// Scale in
+window.addEventListener("scroll", scaleIn);
+
+function scaleIn() {
+    const scales = document.querySelectorAll(".scale");
+    for (let i = 0; i < scales.length; i++){
+        let windowHeight = window.innerHeight;
+        let scaleTop = scales[i].getBoundingClientRect().top;
+        let scalePoint = 100;
+
+        if (scaleTop < windowHeight - scalePoint) {
+            scales[i].classList.add("scaleOnScroll")
+        } else {
+            scales[i].classList.remove("scaleOnScroll");
+        }
+    }
+}
+// zoomLeft
+window.addEventListener("scroll", zoomLeft);
+
+function zoomLeft() {
+    const zoomLefts = document.querySelectorAll(".zoomLeft");
+    for (let i = 0; i < zoomLefts.length; i++){
+        let windowHeight = window.innerHeight;
+        let zoom = zoomLefts[i].getBoundingClientRect().top;
+        let zoomPoint = 100;
+
+        if (zoom < windowHeight - zoomPoint) {
+            zoomLefts[i].classList.add("zoomLeftOnScroll")
+        } else {
+            zoomLefts[i].classList.remove("zoomLeftOnScroll");
+        }
+    }
+}
+// zoomRight
+window.addEventListener("scroll", zoomRight);
+
+function zoomRight() {
+    const zoomRights = document.querySelectorAll(".zoomRight");
+    for (let i = 0; i < zoomRights.length; i++){
+        let windowHeight = window.innerHeight;
+        let zoom = zoomRights[i].getBoundingClientRect().top;
+        let zoomPoint = 100;
+
+        if (zoom < windowHeight - zoomPoint) {
+            zoomRights[i].classList.add("zoomRightOnScroll")
+        } else {
+            zoomRights[i].classList.remove("zoomRightOnScroll");
+        }
+    }
+}
