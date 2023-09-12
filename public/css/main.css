@@ -300,6 +300,8 @@ header {
     margin-top: 3.5rem;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 
 .top-process {
@@ -441,6 +443,8 @@ header {
 #offer {
     padding: 2.5rem 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 #offer .top-process span {
@@ -488,6 +492,8 @@ header {
 
 #service {
     margin: 2.5rem 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .service-cont {
@@ -520,6 +526,8 @@ header {
 
 #terms {
     margin: 8.5rem 0 3.5rem 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .term-policy {
@@ -556,9 +564,22 @@ header {
     gap: 20px;
 }
 
-.accordion{
+/* faqs */
+
+.faqs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.faqs-left {
+    width: 50%;
+}
+
+.accordion {
     margin: 3rem 0;
 }
+
 .accordion .heading {
     display: grid;
     padding-bottom: 40px;
@@ -586,7 +607,7 @@ header {
     cursor: pointer;
     color: #fff;
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
