@@ -1,12 +1,15 @@
 @media screen and (max-width:800px) {
-    header{
+
+
+    header {
         /* background-color: brown; */
     }
-    .buttons{
+
+    .buttons {
         display: none;
     }
 
-    .menuBar{
+    .menuBar {
         display: block;
         position: absolute;
         right: 15px;
@@ -14,14 +17,14 @@
         color: var(--menu);
     }
 
-    .Navbar{
+    .Navbar {
         position: relative;
         align-items: center;
         justify-content: space-between;
         padding: 1rem;
     }
 
-    .menu-Items{
+    .menu-Items {
         position: absolute;
         top: 2rem;
         right: 1rem;
@@ -30,7 +33,7 @@
         display: flex;
         flex-direction: column;
         text-align: end;
-        background: var(--body-1);
+        background: var(--menu-list);
         /* backdrop-filter: blur(15px); */
         width: 50%;
         padding-right: 1rem;
@@ -39,21 +42,151 @@
         overflow: hidden;
     }
 
-    .menu-Items.visible{
+    .menu-Items.visible {
         /* top: 2rem; */
         height: 210px;
         transition: height .5s ease-in;
     }
 
-    .menu-Items .list-items{
+    .menu-Items .list-items {
         /* display: block; */
         /* margin-left: .77rem; */
         margin: .55rem 0;
     }
-    .dark-theme-icon{
+
+    .dark-theme-icon {
         position: absolute;
         top: 23px;
         right: 3rem;
     }
 
+    #hero {
+        margin-top: 2rem;
+    }
+
+    #hero .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .content .left-cont {
+        max-width: 100%;
+    }
+
+    .content .left-cont h1 {
+        color: var(--Facebook-Blue);
+        font-family: Poppins;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.3rem;
+        width: 100%;
+        /* padding: 1rem 0; */
+        /* 118.182% */
+    }
+
+
+    .content .left-cont p {
+        color: var(--Black);
+        text-align: justify;
+        font-size: .65rem;
+        font-weight: 400;
+        line-height: .855rem;
+        margin: 1.2rem 0;
+        /* width: 50%; */
+    }
+
+    .hero-img {
+        margin-top: 24px;
+    }
+
+    .hero-img .hero-mini {
+        width: 38%;
+        position: absolute;
+        top: 15rem;
+        left: -39px;
+    }
+
+    .hero-img .hero-main-img {
+        border-radius: 1.25rem;
+        background: var(--Facebook-Blue, #4267B2);
+        width: 14.375rem;
+        height: 18.8125rem;
+        flex-shrink: 0;
+    }
+
+    .remark {
+        background: var(--Facebook-Blue);
+        color: var(--White);
+        /* margin: 1rem 0 2rem 0; */
+        padding: 2rem 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .remark p {
+        font-size: .68rem;
+        /* padding: 0 1rem; */
+        width: 100%;
+        text-align: center;
+        line-height: 1.4rem;
+
+    }
+
+    .remark .before {
+        /* background-color: #F94D53; */
+        width: fit-content;
+        position: absolute;
+        top: -7rem;
+        left: -5rem;
+    }
+
+    .remark .after {
+        width: fit-content;
+        position: absolute;
+        top: -8rem;
+        right: -8rem;
+    }
+
+    .top-process h2 {
+        font-size: 1.8125rem;
+    }
+
+    .p-white {
+        font-size: .755rem;
+        line-height: 1rem;
+        width: 100%;
+    }
+
+    .box-1 {
+        width: 14.57769rem;
+        height: 21.57769rem;
+    }
+    .box-2 {
+        width: 14.57769rem;
+        height: 21.57769rem;
+    }
+    .box-3 {
+        width: 14.57769rem;
+        height: 21.57769rem;
+    }
+
+    .boxes span h2 {
+        font-size: 5rem;
+        color: var(--White);
+        position: absolute;
+        top: -20PX;
+        right: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width:400px) {
+    .remark {
+        margin: 10rem 0 2rem 0;
+    }
 }
