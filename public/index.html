@@ -13,10 +13,20 @@
     <link rel="stylesheet" href="/public/css/rest.css">
     <link rel="stylesheet" href="/public/css/anim.css">
     <link rel="stylesheet" href="/public/css/all.min.css">
-    <!-- fontawesome -->
-
+    <!-- gsap link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
 
 <body class="dark-theme">
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <!-- <div class="loader loaderEL"></div> -->
+        <div class="loader-logo ">
+            <img src="/public/assets/move-text.png" alt="" class="move-text">
+            <img src="/public/assets/move-logo.svg" alt="" class="move-logo">
+        </div>
+    </div>
+
     <!-- Naviation start -->
 
     <header>
@@ -24,7 +34,7 @@
         <nav class="Navbar">
             <!-- logo -->
             <div class="logo">
-                <img src="/public/assets/logo.png" alt="move-logistics-logo">
+                <img src="/public/assets/logo.png" alt="move-logistics-logo" class="reveal2">
             </div>
 
 
@@ -87,7 +97,8 @@
                 <div class="before">
                     <img src=" /public/assets/Vector 3.png" alt="">
                 </div>
-                <p class="reveal">People who use MOVE-LOGISTICS for their shipping save on average 32% on their shipments compared to
+                <p class="reveal">People who use MOVE-LOGISTICS for their shipping save on average 32% on their
+                    shipments compared to
                     other shipping companies.</p>
                 <div class="after">
                     <img src=" /public/assets/Vector 3.png" alt="">
@@ -245,14 +256,66 @@
                             <img src="/public/assets/pay.svg" alt="">
                             <p>If you choose the <strong><em> "pay later"</em></strong> option at checkout, for Naira
                                 transactions, make it payable to the following account.</p>
+                        </div>
+                    </div>
+                    <div class="policy-svg">
+                        <img src="/public/assets/ID Card-4 1.svg" alt="">
                     </div>
                 </div>
-                <div class="policy-svg">
-                    <img src="/public/assets/ID Card-4 1.svg" alt="">
-                </div>
-            </div>
             </div>
         </aside>
+
+        <div class="accordion">
+        <div class="heading">
+            <h1>Frequently Ask Questions</h1>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="list">Question one</div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est dicta enim fugit officiis labore
+                        nihil
+                        consequatur, doloremque in quisquam tempore quis ea accusantium commodi optio rerum, fuga et
+                        ipsum
+                        quia adipisci eius minima! Vitae ipsam nemo, deserunt modi minus, itaque sint necessitatibus
+                        repudiandae velit dolor corrupti excepturi cumque, perferendis id!</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="list">Question two</div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est dicta enim fugit officiis labore
+                        nihil
+                        consequatur, doloremque in quisquam tempore quis ea accusantium commodi optio rerum, fuga et
+                        ipsum
+                        quia adipisci eius minima! Vitae ipsam nemo, deserunt modi minus, itaque sint necessitatibus
+                        repudiandae velit dolor corrupti excepturi cumque, perferendis id!</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="list">Question three</div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est dicta enim fugit officiis labore
+                        nihil
+                        consequatur, doloremque in quisquam tempore quis ea accusantium commodi optio rerum, fuga et
+                        ipsum
+                        quia adipisci eius minima! Vitae ipsam nemo, deserunt modi minus, itaque sint necessitatibus
+                        repudiandae velit dolor corrupti excepturi cumque, perferendis id!</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="list">Question four</div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est dicta enim fugit officiis labore
+                        nihil
+                        consequatur, doloremque in quisquam tempore quis ea accusantium commodi optio rerum, fuga et
+                        ipsum
+                        quia adipisci eius minima! Vitae ipsam nemo, deserunt modi minus, itaque sint necessitatibus
+                        repudiandae velit dolor corrupti excepturi cumque, perferendis id!</p>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
 
     <footer>
@@ -263,31 +326,31 @@
             <img src="/public/assets/Vector 4.png" alt="">
         </div>
         <div class="links">
-        <div class="link">
-            <h4 >Company</h4>
-            <li>Career </li>
-            <li>About Us</li>
-            <li>Our Story</li>
-            <li>Press</li>
-        </div>
-        <div class="link">
-            <h4>Social</h4>
-            <li>Contact Us </li>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-        </div>
-        <div class="link">
-            <h4>Help & Support</h4>
-            <li>FAQ </li>
-            <li>Terms of Service</li>
-            <li>Intellectual Property Claim</li>
-            <li>Privacy Policy</li>
-            <li>Cookies</li>
-            <li>Non-Discriminatory Statement</li>
-            <li>User Agreement</li>
-        </div>
+            <div class="link">
+                <h4>Company</h4>
+                <li>Career </li>
+                <li>About Us</li>
+                <li>Our Story</li>
+                <li>Press</li>
+            </div>
+            <div class="link">
+                <h4>Social</h4>
+                <li>Contact Us </li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Linkedin</li>
+            </div>
+            <div class="link">
+                <h4>Help & Support</h4>
+                <li>FAQ </li>
+                <li>Terms of Service</li>
+                <li>Intellectual Property Claim</li>
+                <li>Privacy Policy</li>
+                <li>Cookies</li>
+                <li>Non-Discriminatory Statement</li>
+                <li>User Agreement</li>
+            </div>
         </div>
     </footer>
 
@@ -297,6 +360,33 @@
 
 
     <script src="main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+
+    <script>
+ 
+
+        TweenMax.from(".loader-logo", 2, {
+            opacity: 0,
+            delay: 1,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".move-text", 2, {
+            opacity: 0,
+            // delay: .1,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".move-logo", 2, {
+            opacity: 0,
+            delay: .7,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+    </script>
 
 </body>
 

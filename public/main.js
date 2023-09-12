@@ -2,6 +2,8 @@ const menuBar = document.querySelector(".menuBar")
 const menuItems = document.querySelector("#menu-Items")
 const darkIcon = document.querySelector('.dark-theme-icon')
 const wrapper = document.querySelector('body')
+// const preLoader = document.querySelector('#preloder')
+// const loader = document.querySelector('.loaderEL')
 
 menuBar.addEventListener("click", () => {
     // menuItems.classList.toggle("visible")
@@ -33,7 +35,7 @@ darkIcon.addEventListener("click", (e) => {
     } else {
         darkIcon.src = '/public/assets/dark-theme.svg'
     }
-// set localStorage
+    // set localStorage
     localStorage.setItem("isDarkMode", isDarkMode)
 })
 
@@ -69,7 +71,7 @@ window.addEventListener("scroll", reveal);
 
 function reveal() {
     const reveals = document.querySelectorAll(".reveal");
-    for (let i = 0; i < reveals.length; i++){
+    for (let i = 0; i < reveals.length; i++) {
         let windowHeight = window.innerHeight;
         let revealTop = reveals[i].getBoundingClientRect().top;
         let revealPoint = 150;
@@ -87,7 +89,7 @@ window.addEventListener("scroll", scaleIn);
 
 function scaleIn() {
     const scales = document.querySelectorAll(".scale");
-    for (let i = 0; i < scales.length; i++){
+    for (let i = 0; i < scales.length; i++) {
         let windowHeight = window.innerHeight;
         let scaleTop = scales[i].getBoundingClientRect().top;
         let scalePoint = 100;
@@ -104,7 +106,7 @@ window.addEventListener("scroll", zoomLeft);
 
 function zoomLeft() {
     const zoomLefts = document.querySelectorAll(".zoomLeft");
-    for (let i = 0; i < zoomLefts.length; i++){
+    for (let i = 0; i < zoomLefts.length; i++) {
         let windowHeight = window.innerHeight;
         let zoom = zoomLefts[i].getBoundingClientRect().top;
         let zoomPoint = 100;
@@ -121,7 +123,7 @@ window.addEventListener("scroll", zoomRight);
 
 function zoomRight() {
     const zoomRights = document.querySelectorAll(".zoomRight");
-    for (let i = 0; i < zoomRights.length; i++){
+    for (let i = 0; i < zoomRights.length; i++) {
         let windowHeight = window.innerHeight;
         let zoom = zoomRights[i].getBoundingClientRect().top;
         let zoomPoint = 100;
@@ -133,3 +135,17 @@ function zoomRight() {
         }
     }
 }
+
+// accordions
+const accordion = document.getElementsByClassName("wrapper");
+
+for (i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+    })
+}
+
+
+window.addEventListener('load', () => {
+    let pre = document.querySelector('#preloder').classList.add('hidden')
+})
