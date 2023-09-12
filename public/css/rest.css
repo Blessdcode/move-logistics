@@ -113,7 +113,8 @@ body {
 }
 
 ol,
-ul {
+ul,
+li {
     list-style: none;
 }
 
@@ -163,7 +164,6 @@ button {
     border-radius: 5px;
 }
 
-Handle on hover
-::-webkit-scrollbar-thumb:hover {
+Handle on hover::-webkit-scrollbar-thumb:hover {
     background: var(--hover_color);
 }
