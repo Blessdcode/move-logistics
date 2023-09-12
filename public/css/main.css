@@ -49,6 +49,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    
     margin-top: -13px;
     margin-left: -13px;
     border-radius: 60px;
@@ -60,8 +61,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-top: auto;
+    margin-left: auto;
+    transform: translate(-50%,-50%);
     display: flex;
-    align-items: center;
+    align-items: center;justify-content: center;
 }
 
 .move-text {
@@ -369,7 +373,12 @@ header {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    padding: 2rem;
 }
 
 .boxes span h2 {
@@ -421,7 +430,6 @@ header {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
 }
 
 .box-3 {
@@ -434,7 +442,6 @@ header {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
 }
 
 
