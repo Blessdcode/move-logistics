@@ -31,9 +31,9 @@ darkIcon.addEventListener("click", (e) => {
 
     // change the icon when toggle on
     if (wrapper.classList.contains('dark-theme')) {
-        darkIcon.src = '/public/assets/sunCrop.png'
+        darkIcon.src = './assets/sunCrop.png'
     } else {
-        darkIcon.src = '/public/assets/dark-theme.svg'
+        darkIcon.src = './assets/dark-theme.svg'
     }
     // set localStorage
     localStorage.setItem("isDarkMode", isDarkMode)
@@ -57,9 +57,9 @@ function storage() {
     }
 
     if (wrapper.classList.contains('dark-theme')) {
-        darkIcon.src = '/public/assets/sunCrop.png'
+        darkIcon.src = './assets/sunCrop.png'
     } else {
-        darkIcon.src = '/public/assets/dark-theme.svg'
+        darkIcon.src = './assets/dark-theme.svg'
     }
 }
 
