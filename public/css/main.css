@@ -169,7 +169,7 @@ header {
     position: relative;
     padding: .7rem .55rem;
     /* background-color: red; */
-    height: 70vh;
+    height: 90vh;
 }
 
 #hero .content {
@@ -207,6 +207,7 @@ header {
 .right-cont {
     position: relative;
     animation: zoomIn 2s ease-in-out;
+    /* margin-top: 1.5rem; */
 }
 
 .hero-img {
