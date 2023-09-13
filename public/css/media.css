@@ -310,7 +310,7 @@
 
 
     footer {
-        background: var(--Dark-Shade);
+        background: var(--footer);
         text-align: start;
         color: var(--White);
         /* height: 15rem; */
